@@ -1,0 +1,37 @@
+/* customise Toggle Switch */
+.react-switch-bg {
+  border: 1px solid pink;
+}
+
+.settings--toggle-background {
+  background-color: #ffffff;
+  border: none;
+}
+
+.settings--toggle-color-black {
+  color: black;
+}
+
+.settings--toggle-background:hover {
+  background-color: #f9e6ef;
+  border: 1px solid #f9b4d5;
+  color: black;
+}
+
+.settings--toggle-background:active {
+  background-color: #ffffff;
+}
+
+.show > .btn-primary.dropdown-toggle {
+  color: black;
+  background-color: #f9e6ef;
+  border: #f9b4d5;
+}
+
+.settings--container {
+  width: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 15px rgb(217, 217, 217);
+  margin: 50px auto;
+}

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.types--container {
+  margin: 50px;
+  text-align: center;
+}
+
+.dropdown {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Dropdown Item Container */
+.types--container-item {
+  position: relative;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 18px 20px;
+  width: 90%;
+  margin: 10px 15px;
+  border-radius: 5px;
+}
+
+.types--container-item:hover {
+  border: 1px solid #fdc8e1;
+  background-color: #ffeff7;
+}
+
+.types--text {
+  margin-left: 25px;
+}
+
+/* Hide the default button */
+.types--container-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom checkbox */
+.types--checkmark {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 0.5px solid #ccc;
+  border-radius: 4px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.types--container-item input:checked ~ .types--checkmark {
+  background-color: #f981ba;
+  border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.types--checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.types--container-item input:checked ~ .types--checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.types--container-item .types--checkmark:after {
+  left: 8px;
+  top: 3px;
+  width: 5px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.types--dropdown-container {
+  width: 300px;
+  box-shadow: 3px 3px 25px rgb(210, 210, 210);
+  border-radius: 10px;
+}
+
+.types--toggle {
+  border: 2px solid black;
+  color: rgb(164, 160, 160);
+  width: 300px;
+  text-align: left;
+}
+
+.types--toggle:hover {
+  background-color: rgb(249, 232, 245);
+  color: rgb(164, 160, 160);
+}
+
+.types--toggle::after {
+  margin-left: 185px;
+  color: black;
+}

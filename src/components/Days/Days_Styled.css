@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.days--btn {
+  border: none;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-left: 23px;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.days--btn:hover {
+  color: #ffffff;
+  background-color: #3b3b3b;
+}
+
+.days--container {
+  width: 250px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 5px 5px 10px rgb(197, 197, 197);
+  margin: 50px auto;
+}
+
+.days--text {
+  margin-left: 33px;
+  margin-bottom: 0px;
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+}
